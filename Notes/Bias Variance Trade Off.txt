@@ -1,0 +1,17 @@
+Bias-Variance trade off tells us how divergent or inconsistent our model is.
+
+Bias: Accounts for errors made by the model you have chosen. 
+Example: Original data is derived from a very non-linear model but you try to model the observed data with a linear model. In this case inherently you will have a large bias!!. Better use a non-linear model obtaining low bias.
+
+Variance: Variance refers to the amount by which our model will would change if we estimated it using a different training data set.
+Example: We try to closely fit the model with our training data set and when our model is exposed to a new data set(test set), it produces unexpected results. The model will perform very well on training data but fail to give correct predictions on new unseen data.
+
+High variance results in overfitting the data. More flexible statistical methods such as SVM result in High Variance.
+High bias results in underfitting the data. Less flexible statistical methods suchh as Linear Regression result in High Bias.
+
+We have to find a spot between variance and bias, where we can negotiate low variance and low bias. As a result, our model will operate well on new unseen dataset.
+Realistically we have to trade off variance for bias
+
+Q1. Does increasing the complexity increase or decrease the bias? 
+Ans. Decreases the bias
+
