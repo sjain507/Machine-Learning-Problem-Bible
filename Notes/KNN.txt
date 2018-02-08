@@ -1,0 +1,29 @@
+K Nearest Neighbors
+
+KNN is a classification algorithm.
+
+Suppose we want to predict to which class a new test observation x belongs
+Steps:
+1. Calculate the distance from x to all points in your data
+2. Sort the points in your data by increasing distance from x
+3. Predict the majority label of the 'k' closest points
+
+Choosing the value of k affects the class to which x will belong.
+k = 1 will pick up a lot of noise.
+
+Increasing values of k will smooth out and create bias at the cost of mislabeling the values
+
+
+Pros:
+Very Simple
+Training is trivial
+Works with any number of class
+Easy to add more data
+Few Parameters: 
+1. K
+2. Distance Metric
+
+Cons:
+1. High prediction cost (worse for larger datasets)
+2. Not good with high dimensional data
+3. Categorical features dont work well
